@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "calculator";
+    src: url(fonts/digital-7/digital-7.ttf) format("truetype");
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Arial';
+}
+.mainWraper {
+    border-radius: 25%;
+    width: 500px;
+    padding: 15px;
+    position: relative;
+    background-image: url(images/background.jpg);
+//  https://web.njit.edu/~sdr3/DesignPatterns/creational.html
+    background-position: center;
+    background-size: cover;
+    
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .timerPart {
+        display: flex;
+    }
+    .upper {
+        justify-content: space-around;
+        .left, .right {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: greenyellow;
+            padding: 20px;
+            border-radius: 50%;
+            border: 1px solid greenyellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                background-color: aliceblue;
+                padding: 5px;
+                border-radius: 30%;
+                font-size: 23px;
+                margin: 0 0 5px 0;
+                font-weight: 700;
+            }
+            span {
+                font-size: 26px;
+            }
+        }
+        .left {
+            p {
+                background-color: rgba(210, 255, 219, .8);
+                color: black;
+            }
+        }
+        .right {
+            p {
+                background-color: rgba(0, 10, 3, .8);
+                color: aliceblue;
+            }
+        }
+    }
+    .middle {
+        display: flex;
+        justify-content: space-around;
+        .clock {
+//            background-image: url(http://storefixtures.hollaender.com/images/3/Catalog/American_nut_web.jpg);
+//            background-position: center;
+//            background-repeat: repeat; 
+//            padding: 20px;
+//            border-radius: 3%;
+            span {
+                border-radius: 30%;
+                background-color: black;
+                display: inline-block;
+                padding: 30px 50px;
+                width: 75px;
+                text-align: center;
+                font-family: 'calculator';
+                font-size: 50px;
+                font-weight: 500;
+                color: greenyellow;
+            }
+        }
+    }
+    .lower {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            margin-top: 15px;
+            padding: 7px;
+        }
+    }
+    button {
+        padding: 60px;
+        font-weight: 800;
+        border-radius: 30%;
+    }
+}

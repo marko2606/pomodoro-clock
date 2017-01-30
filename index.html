@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marko Zelenbaba Pomodoro Clock</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        
+    </head>
+    <body>
+        <div class="mainWraper">
+            <div class="upper timerPart">
+                <div class="left">
+                    <p>Work Timer</p>
+                    <div>
+                        <span class="js-deductMinWork" onclick="workTimer.decreaseMinutes()">-</span>
+                        <span class="js-setTimerWork">2</span>
+                        <span class="js-addMinWork" onclick="workTimer.increaseMinutes()">+</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Break Timer</p>
+                    <div>
+                        <span class="js-deductMinBreak" onclick="breakTimer.decreaseMinutes()">-</span>
+                        <span class="js-setTimerBreak">1</span>
+                        <span class="js-addMinBreak" onclick="breakTimer.increaseMinutes()">+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="middle timerPart">
+                <div class="left clock">
+                    <span class="js-workTime">0:00</span>
+                </div>
+                <div class="right clock">
+                    <span class="js-breakTime">0:00</span>
+                </div>
+            </div>
+            <div class="lower timerPart">
+                <button class="startTimer js-startTimer">Start / Pause</button>
+                <button class="reset js-reset">Reset</button>
+            </div>
+        </div>
+        
+        
+        <!--<p>Work Timer</p>
+        <span class="js-deductMinWork" onclick="workTimer.decreaseMinutes()">-</span>
+        <span class="js-setTimerWork">2</span>
+        <span class="js-addMinWork" onclick="workTimer.increaseMinutes()">+</span>
+
+        <p>Set break time</p>
+        <span class="js-deductMinBreak" onclick="breakTimer.decreaseMinutes()">-</span>
+        <span class="js-setTimerBreak">1</span>
+        <span class="js-addMinBreak" onclick="breakTimer.increaseMinutes()">+</span>-->
+
+        <!--<p>WORK TIME</p>
+        <span class="js-workTime">0:00</span>
+        <p>BREAK TIME</p>
+        <span class="js-breakTime">0:00</span>-->
+        <script src="script.js"></script>
+    </body>
+</html>
